@@ -1,0 +1,45 @@
+
+body {
+    width: 95vw;
+    height: 95vh;
+    
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: rgba(0, 204, 255, 0.150);
+}
+
+header {
+    width: 100%;
+    height: 10%;
+}
+
+.about {
+    margin-top: 5%;
+    padding: 5%;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    font-size: larger;
+    margin-bottom: 5%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    border: thin solid black;
+    padding: 1%;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+
+.flexDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
