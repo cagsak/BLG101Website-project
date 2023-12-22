@@ -41,7 +41,7 @@ function cardClicked(element, index){
     }
     
     clicked_numbers.push(list_numbers[index-1])
-    element.src = "/images/" + list_numbers[index-1] + ".png";
+    element.src = "../images/" + list_numbers[index-1] + ".png";
     
     for(let i = 0; i<clicked_numbers.length ; i++){
         if (clicked_numbers[i] != true_list[i]){
