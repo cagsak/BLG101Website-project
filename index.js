@@ -15,6 +15,8 @@ let score = 0;
 
 let clicked_numbers = [];
 
+let button_clickable = true;
+
 function shuffle() {
     list_numbers.sort( () => Math.random()-0.5 );
 }
@@ -70,18 +72,21 @@ function gameOver(){
 }
 
 function ButtonClicked() {
-    if(is_game_started){
+    if(!button_clickable){
         return;
     }
+    button_clickable = false;
     score = 0;
     clicked_numbers = [];
     game_over = false;
+    document.querySelector("#start-button").textContent = "Restart";
     document.querySelector("#congrats").style.display = "none";
-    document.querySelector("#score").textContent = "Your Score : " + Math.floor(score);
+    document.querySelector("#score").textContent = "Your Score : 0";
     shuffle();
     show_front();
     setTimeout(() => {
         is_game_started = true;
+        button_clickable = true;
         show_back();
     }, 2000);
 }
