@@ -43,3 +43,8 @@ a{
     justify-content: space-between;
 
 }
+
+.card{
+    width: 9%;
+    height: auto;
+}
