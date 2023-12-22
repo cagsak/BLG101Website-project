@@ -21,13 +21,13 @@ function shuffle() {
 
 function show_front(){
     for(let i = 0 ; i<7 ; i++){
-        list_cards[i].src = "/images/" + list_numbers[i] + ".png";
+        list_cards[i].src = "../images/" + list_numbers[i] + ".png";
     }
 }
 
 function show_back (){
     for(let i = 0 ; i<7 ; i++){
-        list_cards[i].src = "/images/blank.png";
+        list_cards[i].src = "../images/blank.png";
     }
 }
 
