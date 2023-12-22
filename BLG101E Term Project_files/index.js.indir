@@ -49,18 +49,13 @@ function cardClicked(element, index){
         }
     }
 
+
+
     if(game_over){
         gameOver();
     } else{
         score += 100/7;
-    }
-
-    document.querySelector("#score").textContent = "Your Score : " + Math.floor(score);
-
-    if(Math.floor(score) == 100){
-        document.querySelector("#congrats").style.display = "block";
-        game_over = true;
-        gameOver();
+        console.log(Math.floor(score));
     }
 }
 
@@ -76,8 +71,6 @@ function ButtonClicked() {
     score = 0;
     clicked_numbers = [];
     game_over = false;
-    document.querySelector("#congrats").style.display = "none";
-    document.querySelector("#score").textContent = "Your Score : " + Math.floor(score);
     shuffle();
     show_front();
     setTimeout(() => {
