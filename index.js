@@ -23,13 +23,13 @@ function shuffle() {
 
 function show_front(){
     for(let i = 0 ; i<7 ; i++){
-        list_cards[i].src = "../images/" + list_numbers[i] + ".png";
+        list_cards[i].src = "../images/" + list_numbers[i] + ".svg";
     }
 }
 
 function show_back (){
     for(let i = 0 ; i<7 ; i++){
-        list_cards[i].src = "../images/blank.png";
+        list_cards[i].src = "../images/blank.svg";
     }
 }
 
@@ -38,12 +38,12 @@ function cardClicked(element, index){
         return;
     }
     
-    if(!element.src.endsWith("blank.png")){
+    if(!element.src.endsWith("blank.svg")){
         return;
     }
     
     clicked_numbers.push(list_numbers[index-1])
-    element.src = "../images/" + list_numbers[index-1] + ".png";
+    element.src = "../images/" + list_numbers[index-1] + ".svg";
     
     for(let i = 0; i<clicked_numbers.length ; i++){
         if (clicked_numbers[i] != true_list[i]){
